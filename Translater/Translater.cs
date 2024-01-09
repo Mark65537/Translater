@@ -87,7 +87,7 @@ namespace Translater
 
             throw new Exception($"невозможно перевести {text} c {frmLng} на {toLng}");
         }
-        //создать функцию AddNewAPIkeys() которая ищет стороку начинающуюся на trnsl.1.1.20 и заканчивающуюся на знак ' или " на сайте https://github.com/search?p=3&q=https%3A%2F%2Ftranslate.yandex.net%2Fapi%2Fv1.5%2Ftr.json%2Ftranslate%3Fkey%3D&type=Code
+        //функция которая ищет стороку начинающуюся на trnsl.1.1.20 и заканчивающуюся на знак ' или " на сайте https://github.com/search?p=3&q=https%3A%2F%2Ftranslate.yandex.net%2Fapi%2Fv1.5%2Ftr.json%2Ftranslate%3Fkey%3D&type=Code
         private static List<string> AddNewAPIkeys()
         {
             List<string> keys = GetYandexAPIkeys();
